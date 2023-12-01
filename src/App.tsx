@@ -17,12 +17,12 @@ const App = () => {
     setGoals((prevGoals) => prevGoals.filter((goal) => goal.id !== id));
   }
 
-  function handleAddGoal() {
+  function handleAddGoal(goal: string, summary: string) {
     setGoals((prevGoal) => {
       const newGoal: CourseGoal = {
         id: Math.random(),
-        title: "Learn React + TS",
-        description: "Learn it in depth",
+        title: goal,
+        description: summary,
       };
       return [...prevGoal, newGoal];
     });
@@ -32,7 +32,7 @@ const App = () => {
       <Header image={{ src: goalsImg, alt: "A list of goalts" }}>
         <h1>Your Course Goals</h1>
       </Header>
-      <NewGoal />
+      <NewGoal onAddGoal={handleAddGoal} />
       <CouseGoalList goals={goals} onDeleteGoal={handeDeleteGoal} />
     </main>
   );
