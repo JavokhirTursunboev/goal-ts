@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+# put-todo.netlify.app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+put-todo.netlify.app is a minimalist to-do list web application built using TypeScript, React, and Vite for a streamlined development experience.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Effortless Task Management:** Add, edit, and delete tasks seamlessly.
+- **Responsive Design:** Access your to-do list across devices with ease.
+- **Intuitive Interface:** User-friendly design for efficient task organization.
 
-## Expanding the ESLint configuration
+## Usage
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Visit [put-todo.netlify.app](https://put-todo.netlify.app).
+2. Begin by adding your tasks using the input field.
+3. Check off completed tasks or remove them as necessary.
+4. Enjoy a smooth and efficient to-do list management experience!
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- TypeScript
+- React
+- Vite
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Contributing
+
+Contributions are welcomed! To contribute to this project, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/NewFeature`.
+3. Commit your changes: `git commit -am 'Add new feature'`.
+4. Push to the branch: `git push origin feature/NewFeature`.
+5. Submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Author
+
+[JAVOKHIR] - [https://github.com/JavokhirTursunboev/goal-ts]
