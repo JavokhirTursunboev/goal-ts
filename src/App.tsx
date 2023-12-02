@@ -8,7 +8,7 @@ export type CourseGoal = {
   title: string;
   description: string;
   id: number;
-  onDeleteGoal: (id: number) => void;
+  onDeleteGoal?: (id: number) => void;
 };
 const App = () => {
   const [goals, setGoals] = useState<CourseGoal[]>([]);
